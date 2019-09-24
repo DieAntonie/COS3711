@@ -1,0 +1,6 @@
+# QT Creator configuration
+COS3711_ExamPrep.pro.user
+
+# VS Code Environment configuration
+.vscode/settings.json
+.vscode/c_cpp_properties.json
