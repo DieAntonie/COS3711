@@ -66,17 +66,17 @@
                         </widget>
                     </item>
                     <item>
-                        <widget class="QLabel" name="termListLabel">
+                        <widget class="QLabel" name="modelViewLabel">
                             <property name="text">
                                 <string>List of Terms:</string>
                             </property>
                             <property name="buddy">
-                                <cstring>termList</cstring>
+                                <cstring>modelView</cstring>
                             </property>
                         </widget>
                     </item>
                     <item>
-                        <widget class="QListWidget" name="termList"/>
+                        <widget class="QTreeView" name="modelView"/>
                     </item>
                     <item>
                         <widget class="QPushButton" name="exportTermsButton">
@@ -113,7 +113,7 @@
         <tabstop>termLineEdit</tabstop>
         <tabstop>definitionTextEdit</tabstop>
         <tabstop>addTermButton</tabstop>
-        <tabstop>termList</tabstop>
+        <tabstop>modelView</tabstop>
         <tabstop>exportTermsButton</tabstop>
     </tabstops>
     <resources/>
@@ -121,7 +121,7 @@
         <connection>
             <sender>addTermButton</sender>
             <signal>clicked()</signal>
-            <receiver>termList</receiver>
+            <receiver>modelView</receiver>
             <slot>update()</slot>
             <hints>
                 <hint type="sourcelabel">
@@ -135,7 +135,7 @@
             </hints>
         </connection>
         <connection>
-            <sender>termList</sender>
+            <sender>modelView</sender>
             <signal>itemDoubleClicked(QListWidgetItem*)</signal>
             <receiver>termLineEdit</receiver>
             <slot>update()</slot>

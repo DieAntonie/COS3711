@@ -16,4 +16,18 @@
         <term>nee nee</term>
         <definition>Jou ma se POenanie!</definition>
     </DataEntity>
+    <DataEntity>
+        <term>MVC</term>
+        <definition>Model View Conctroler</definition>
+    </DataEntity>
+    <DataEntity>
+        <term>Model View Controller</term>
+        <definition>A Classic Design Pattern:
+MVC Consists of three kinds of objects.
+ - The Model is the application object.
+ - The View is the screen representation.
+ - The Controller defines the way the UI reacts to user input.
+
+Before MVC, UI desings tended to lump these objects together. MVC decoupels them to increate flexibility and reuse.</definition>
+    </DataEntity>
 </datacollection>

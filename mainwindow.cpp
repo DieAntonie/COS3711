@@ -11,9 +11,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     reader = new DataReader("backup.xml");
     writer = new DataWriter("backup.xml");
     collection = new DataCollection(reader->read());
+    model = new QStandardItemModel();
+
+    model->setHorizontalHeaderItem(0, new QStandardItem(QString("Term")));
+    model->setHorizontalHeaderItem(1, new QStandardItem(QString("Definition")));
     ui->setupUi(this);
+
     connect(ui->addTermButton, SIGNAL(clicked()), this, SLOT(addTerm()));
-    connect(ui->termList, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(editTerm(QListWidgetItem *)));
+    connect(ui->modelView, SIGNAL(itemDoubleClicked(QListWidgetItem *)), this, SLOT(editTerm(QListWidgetItem *)));
 
     renderCollection();
 }
@@ -25,6 +30,7 @@ MainWindow::~MainWindow()
     delete reader;
     delete writer;
     delete collection;
+    delete model;
 }
 
 void MainWindow::addTerm()
@@ -49,12 +55,17 @@ void MainWindow::editTerm(QListWidgetItem *item)
 
 void MainWindow::renderCollection()
 {
-    ui->termList->clear();
+    model->clear();
     foreach(QObject *data_object, *collection->toList())
     {
         DataEntity *data_entity = qobject_cast<DataEntity *>(data_object);
-        ui->termList->addItem(data_entity->getTerm());
+        QList<QStandardItem*> data_row;
+
+        data_row.append(new QStandardItem(data_entity->getTerm()));
+        data_row.append(new QStandardItem(data_entity->getDefinition()));
+        model->appendRow(data_row);
     }
+    ui->modelView->setModel(model);
     clearInput();
 }
 

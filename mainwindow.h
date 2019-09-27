@@ -1,8 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
 #include <QListWidgetItem>
+#include <QMainWindow>
+#include <QStandardItemModel>
 #include "datacollection.h"
 #include "datareader.h"
 #include "datawriter.h"
@@ -26,6 +27,7 @@ private:
     DataCollection *collection;
     DataReader *reader;
     DataWriter *writer;
+    QStandardItemModel *model;
 
 private slots:
     void addTerm();
