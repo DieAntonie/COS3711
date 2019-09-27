@@ -2,7 +2,7 @@
 #define DATACOLLECTION_H
 
 #include <QList>
-#include "dataentity.h"
+#include "model/dataentity.h"
 
 class DataCollection
 {

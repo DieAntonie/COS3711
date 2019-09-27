@@ -2,7 +2,7 @@
 #define DATAWRITER_H
 
 #include <QString>
-#include "datacollection.h"
+#include "model/datacollection.h"
 
 class DataWriter
 {

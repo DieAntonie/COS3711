@@ -3,7 +3,7 @@
 #include <QMetaProperty>
 #include <QVariant>
 #include <QXmlStreamWriter>
-#include "datawriter.h"
+#include "utils/datawriter.h"
 
 DataWriter::DataWriter(QString file_name) : fileName(file_name)
 {

@@ -2,7 +2,7 @@
 #define DATAREADER_H
 
 #include <QString>
-#include "datacollection.h"
+#include "model/datacollection.h"
 
 class DataReader
 {

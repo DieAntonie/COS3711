@@ -4,7 +4,7 @@
 #include <QStringList>
 #include <QVariant>
 #include <QXmlStreamReader>
-#include "datareader.h"
+#include "utils/datareader.h"
 
 DataReader::DataReader(QString file_name) : fileName(file_name)
 {

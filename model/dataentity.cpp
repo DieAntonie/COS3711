@@ -1,4 +1,4 @@
-#include "dataentity.h"
+#include "model/dataentity.h"
 
 DataEntity::DataEntity(QString data_term) : term(data_term)
 {

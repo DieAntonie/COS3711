@@ -1,8 +1,8 @@
 #include <QFile>
 #include <QMetaType>
 #include <QTextStream>
-#include "dataentity.h"
-#include "mainwindow.h"
+#include "model/dataentity.h"
+#include "view/mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)

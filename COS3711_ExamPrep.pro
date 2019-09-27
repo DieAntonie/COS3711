@@ -25,18 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    dataentity.cpp \
-    datacollection.cpp \
-    datareader.cpp \
-    datawriter.cpp
+        view/mainwindow.cpp \
+        model/dataentity.cpp \
+        model/datacollection.cpp \
+        utils/datareader.cpp \
+        utils/datawriter.cpp
 
 HEADERS += \
-        mainwindow.h \
-    dataentity.h \
-    datacollection.h \
-    datareader.h \
-    datawriter.h
+        view/mainwindow.h \
+        model/dataentity.h \
+        model/datacollection.h \
+        utils/datareader.h \
+        utils/datawriter.h
 
 FORMS += \
-        mainwindow.ui
+        view/mainwindow.ui

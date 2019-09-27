@@ -4,9 +4,9 @@
 #include <QListWidgetItem>
 #include <QMainWindow>
 #include <QStandardItemModel>
-#include "datacollection.h"
-#include "datareader.h"
-#include "datawriter.h"
+#include "model/datacollection.h"
+#include "utils/datareader.h"
+#include "utils/datawriter.h"
 
 namespace Ui
 {
