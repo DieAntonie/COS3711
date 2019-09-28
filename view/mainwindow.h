@@ -27,7 +27,7 @@ private:
     DataCollection *collection;
     DataReader *reader;
     DataWriter *writer;
-    QStandardItemModel *model;
+    QStandardItemModel *viewModel;
 
 private slots:
     void addTerm();
