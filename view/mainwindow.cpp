@@ -1,6 +1,7 @@
 #include <QFile>
 #include <QMetaType>
 #include <QTextStream>
+#include "controller/termdelegate.h"
 #include "model/dataentity.h"
 #include "view/mainwindow.h"
 #include "ui_mainwindow.h"
@@ -55,6 +56,8 @@ void MainWindow::editTerm(QListWidgetItem *item)
 
 void MainWindow::renderCollection()
 {
+    TermDelegate * delegate = new TermDelegate();
+    
     viewModel->clear();
     foreach(QObject *data_object, *collection->toList())
     {
@@ -65,7 +68,9 @@ void MainWindow::renderCollection()
         data_row.append(new QStandardItem(data_entity->getDefinition()));
         viewModel->appendRow(data_row);
     }
+
     ui->modelView->setModel(viewModel);
+    ui->modelView->setItemDelegate(delegate);
     clearInput();
 }
 

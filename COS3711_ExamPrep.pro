@@ -29,14 +29,16 @@ SOURCES += \
         model/dataentity.cpp \
         model/datacollection.cpp \
         utils/datareader.cpp \
-        utils/datawriter.cpp
+        utils/datawriter.cpp \
+        controller/termdelegate.cpp
 
 HEADERS += \
         view/mainwindow.h \
         model/dataentity.h \
         model/datacollection.h \
         utils/datareader.h \
-        utils/datawriter.h
+        utils/datawriter.h \
+        controller/termdelegate.h
 
 FORMS += \
         view/mainwindow.ui
