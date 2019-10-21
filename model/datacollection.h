@@ -7,8 +7,8 @@
 class DataCollection
 {
 public:
-    explicit DataCollection();
-    explicit DataCollection(DataCollection *);
+    DataCollection();
+    DataCollection(DataCollection *);
     ~DataCollection();
 
     void add(QObject *);

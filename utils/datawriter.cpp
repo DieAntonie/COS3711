@@ -2,7 +2,6 @@
 #include <QMetaObject>
 #include <QMetaProperty>
 #include <QVariant>
-#include <QXmlStreamWriter>
 #include "utils/datawriter.h"
 
 DataWriter::DataWriter(QString file_name) : fileName(file_name)
@@ -11,7 +10,6 @@ DataWriter::DataWriter(QString file_name) : fileName(file_name)
 
 void DataWriter::write(DataCollection *data_collection)
 {
-    QXmlStreamWriter xml_writer;
     QFile file(fileName);
     file.open(QIODevice::WriteOnly);
 
