@@ -1,4 +1,4 @@
-#include "controller/termdelegate.h"
+#include "application/controller/termdelegate.h"
 
 TermDelegate::TermDelegate()
 {

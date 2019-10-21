@@ -1,4 +1,4 @@
-#include "model/datacollection.h"
+#include "application/model/datacollection.h"
 
 DataCollection::DataCollection()
 {

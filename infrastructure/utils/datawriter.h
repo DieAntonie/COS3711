@@ -3,7 +3,7 @@
 
 #include <QString>
 #include <QXmlStreamWriter>
-#include "model/datacollection.h"
+#include "application/model/datacollection.h"
 
 class DataWriter
 {

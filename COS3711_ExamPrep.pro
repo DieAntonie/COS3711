@@ -25,20 +25,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        view/mainwindow.cpp \
-        model/dataentity.cpp \
-        model/datacollection.cpp \
-        utils/datareader.cpp \
-        utils/datawriter.cpp \
-        controller/termdelegate.cpp
+        application/view/mainwindow.cpp \
+        application/model/dataentity.cpp \
+        application/model/datacollection.cpp \
+        infrastructure/utils/datareader.cpp \
+        infrastructure/utils/datawriter.cpp \
+        application/controller/termdelegate.cpp
 
 HEADERS += \
-        view/mainwindow.h \
-        model/dataentity.h \
-        model/datacollection.h \
-        utils/datareader.h \
-        utils/datawriter.h \
-        controller/termdelegate.h
+        application/view/mainwindow.h \
+        application/model/dataentity.h \
+        application/model/datacollection.h \
+        infrastructure/utils/datareader.h \
+        infrastructure/utils/datawriter.h \
+        application/controller/termdelegate.h
 
 FORMS += \
-        view/mainwindow.ui
+        application/view/mainwindow.ui

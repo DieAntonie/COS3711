@@ -2,7 +2,7 @@
 #include <QMetaObject>
 #include <QMetaProperty>
 #include <QVariant>
-#include "utils/datawriter.h"
+#include "infrastructure/utils/datawriter.h"
 
 DataWriter::DataWriter(QString file_name) : fileName(file_name)
 {

@@ -1,9 +1,9 @@
 #include <QFile>
 #include <QMetaType>
 #include <QTextStream>
-#include "controller/termdelegate.h"
-#include "model/dataentity.h"
-#include "view/mainwindow.h"
+#include "application/controller/termdelegate.h"
+#include "application/model/dataentity.h"
+#include "application/view/mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
