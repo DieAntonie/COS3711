@@ -30,7 +30,10 @@ SOURCES += \
         application/model/datacollection.cpp \
         infrastructure/utils/datareader.cpp \
         infrastructure/utils/datawriter.cpp \
-        application/controller/termdelegate.cpp
+        application/controller/termdelegate.cpp \
+        domain/character/character.cpp \
+        domain/environment/environment.cpp \
+    application/characterform.cpp
 
 HEADERS += \
         application/view/mainwindow.h \
@@ -38,7 +41,11 @@ HEADERS += \
         application/model/datacollection.h \
         infrastructure/utils/datareader.h \
         infrastructure/utils/datawriter.h \
-        application/controller/termdelegate.h
+        application/controller/termdelegate.h \
+        domain/character/character.h \
+        domain/environment/environment.h \
+    application/characterform.h
 
 FORMS += \
-        application/view/mainwindow.ui
+        application/view/mainwindow.ui \
+    application/characterform.ui

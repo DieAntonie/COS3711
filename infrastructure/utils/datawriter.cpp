@@ -23,7 +23,7 @@ void DataWriter::write(DataCollection *data_collection)
         const QMetaObject *meta_object = data_object->metaObject();
         xml_writer.writeStartElement(meta_object->className());
 
-        for (int property_index = 1; property_index < meta_object->propertyCount(); property_index++)
+        for (int property_index = meta_object->propertyOffset(); property_index < meta_object->propertyCount(); property_index++)
         {
             const char *property_name = meta_object->property(property_index).name();
             QString property_value = data_object->property(property_name).toString();
